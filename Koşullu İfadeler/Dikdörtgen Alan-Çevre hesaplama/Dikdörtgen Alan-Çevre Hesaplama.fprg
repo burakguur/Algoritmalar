@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ERTAN"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-30 01:29:19 &#214;&#214;"/>
+        <attribute name="created" value="RVJUQU47REVTS1RPUC05UUNOU0tJOzIwMjAtMTEtMjk7MTA6NDA6MTAgw5ZTOzI4ODI="/>
+        <attribute name="edited" value="RVJUQU47REVTS1RPUC05UUNOU0tJOzIwMjAtMTEtMjk7MTA6NDM6Mzcgw5ZTOzE7MzAwMg=="/>
+        <attribute name="edited" value="ZXJ0YW47REVTS1RPUC1CQk8zMEdGOzIwMjMtMDMtMTg7MDk6NTE6MDkgw5ZTOzE7MzEwNw=="/>
+        <attribute name="edited" value="YnVyYWs7REVTS1RPUC1TOExLNlRLOzIwMjMtMDMtMzA7MDE6Mjk6MTkgw5bDljsxOzMyNzc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="kisaKenar, uzunKenar, cevre, alan" type="Integer" array="False" size=""/>
+            <output expression="&quot;k&#305;sa Kenar Uzunlu&#287;unu Giriniz&quot;" newline="True"/>
+            <input variable="kisaKenar"/>
+            <output expression="&quot;uzun Kenar&#305; Giriniz&quot;" newline="True"/>
+            <input variable="uzunKenar"/>
+            <assign variable="cevre" expression="2 * (kisaKenar + uzunKenar)"/>
+            <assign variable="alan" expression="kisaKenar * uzunKenar"/>
+            <output expression="&quot;&#199;evre: &quot; &amp; cevre" newline="True"/>
+            <output expression="&quot;Alan: &quot; &amp; alan" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
