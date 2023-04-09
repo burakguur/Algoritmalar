@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="burak"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-03 02:13:58 &#214;S"/>
+        <attribute name="created" value="YnVyYWs7REVTS1RPUC1TOExLNlRLOzIwMjMtMDQtMDM7MDI6MDY6NTIgw5ZTOzMwMzI="/>
+        <attribute name="edited" value="YnVyYWs7REVTS1RPUC1TOExLNlRLOzIwMjMtMDQtMDM7MDI6MTM6NTggw5ZTOzE7MzE0NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="metin" type="String" array="False" size=""/>
+            <declare name="saya&#231;" type="Integer" array="False" size=""/>
+            <output expression="&quot;Metin Giriniz&quot;" newline="True"/>
+            <input variable="metin"/>
+            <for variable="saya&#231;" start="1" end="10" direction="inc" step="1">
+                <output expression="saya&#231;&amp; &quot;.&quot; &amp; metin" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
