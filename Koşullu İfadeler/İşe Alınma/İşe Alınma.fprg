@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ERTAN"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-05-08 01:13:47 &#214;&#214;"/>
+        <attribute name="created" value="RVJUQU47REVTS1RPUC05UUNOU0tJOzIwMjEtMDUtMDc7MTE6MTU6MDkgw5ZTOzI4OTM="/>
+        <attribute name="edited" value="RVJUQU47REVTS1RPUC05UUNOU0tJOzIwMjEtMDUtMDg7MDE6MTM6NDcgw5bDljszOzMxMzQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="yas" type="Integer" array="False" size=""/>
+            <declare name="surucuBelgesi, ogrenimDurumu" type="String" array="False" size=""/>
+            <output expression="&quot;Ya&#351;&#305;n&#305;z&#305; Giriniz&quot;" newline="True"/>
+            <input variable="yas"/>
+            <if expression="yas &lt; 35">
+                <then>
+                    <output expression="&quot;S&#252;r&#252;c&#252; Belgeniz Var M&#305; E/H&quot;" newline="True"/>
+                    <input variable="surucuBelgesi"/>
+                    <output expression="&quot;&#220;niversite Mezunu musunuz? E/H&quot;" newline="True"/>
+                    <input variable="ogrenimDurumu"/>
+                    <if expression="surucuBelgesi = &quot;E&quot; &amp;&amp; ogrenimDurumu == &quot;E&quot;">
+                        <then>
+                            <output expression="&quot;&#304;&#351;e Al&#305;nd&#305;n&#305;z&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;&#220;zg&#252;n&#252;z &#304;&#351;e Al&#305;nmad&#305;n&#305;z&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;&#220;zg&#252;n&#252;z &#304;&#351;e Al&#305;nmad&#305;n&#305;z&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
