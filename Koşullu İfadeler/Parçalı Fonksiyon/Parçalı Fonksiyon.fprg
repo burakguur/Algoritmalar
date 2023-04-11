@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ERTAN"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-05-15 07:02:43 &#214;S"/>
+        <attribute name="created" value="RVJUQU47REVTS1RPUC05UUNOU0tJOzIwMjEtMDUtMTU7MDM6NDM6MTQgw5ZTOzI4OTA="/>
+        <attribute name="edited" value="RVJUQU47REVTS1RPUC05UUNOU0tJOzIwMjEtMDUtMTU7MDc6MDI6NDMgw5ZTOzE7Mjk5OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y" type="Real" array="False" size=""/>
+            <output expression="&quot;X de&#287;erini giriniz&quot;" newline="True"/>
+            <input variable="x"/>
+            <if expression="x &lt; 1">
+                <then>
+                    <assign variable="y" expression="3 * x - 4"/>
+                </then>
+                <else>
+                    <if expression="x &gt;= 1 &amp;&amp; x &lt;= 10">
+                        <then>
+                            <assign variable="y" expression="x + 2"/>
+                        </then>
+                        <else>
+                            <if expression="x &gt; 10">
+                                <then>
+                                    <assign variable="y" expression="2 * x + 4"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Fonksiyon Sonucu: &quot; &amp; y" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
