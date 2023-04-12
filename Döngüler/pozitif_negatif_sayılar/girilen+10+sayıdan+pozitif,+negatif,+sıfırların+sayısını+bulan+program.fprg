@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ERTAN"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-05-17 02:35:39 &#214;S"/>
+        <attribute name="created" value="RVJUQU47REVTS1RPUC05UUNOU0tJOzIwMjEtMDUtMTc7MDI6MDM6MTcgw5ZTOzI4OTA="/>
+        <attribute name="edited" value="RVJUQU47REVTS1RPUC05UUNOU0tJOzIwMjEtMDUtMTc7MDI6MzU6Mzkgw5ZTOzE7MzAwNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, sayac, pozitifSayi, negatifSayi, sifirSayi" type="Integer" array="False" size=""/>
+            <assign variable="pozitifSayi" expression="0"/>
+            <assign variable="negatifSayi" expression="0"/>
+            <assign variable="sifirSayi" expression="0"/>
+            <for variable="sayac" start="1" end="10" direction="inc" step="1">
+                <output expression="sayac &amp; &quot;. Say&#305;y&#305; Giriniz&quot;" newline="True"/>
+                <input variable="sayi"/>
+                <if expression="sayi &gt; 0">
+                    <then>
+                        <assign variable="pozitifSayi" expression="pozitifSayi + 1"/>
+                    </then>
+                    <else>
+                        <if expression="sayi == 0">
+                            <then>
+                                <assign variable="sifirSayi" expression="sifirSayi + 1"/>
+                            </then>
+                            <else>
+                                <assign variable="negatifSayi" expression="negatifSayi + 1"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;Pozitif Say&#305;: &quot; &amp; pozitifSayi &amp; &quot;  Negatif Say&#305;: &quot; &amp; negatifSayi &amp; &quot;  S&#305;f&#305;r Say&#305;s&#305; : &quot; &amp; sifirSayi" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
