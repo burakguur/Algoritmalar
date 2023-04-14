@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ERTAN"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-09-04 10:39:50 &#214;S"/>
+        <attribute name="created" value="RVJUQU47REVTS1RPUC05UUNOU0tJOzIwMjEtMDUtMDM7MTA6NDc6MDcgw5ZTOzI4OTE="/>
+        <attribute name="edited" value="RVJUQU47REVTS1RPUC05UUNOU0tJOzIwMjEtMDktMDQ7MTA6Mzk6NTAgw5ZTOzI7MzAwNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, bolen, sayac, asalKontrol" type="Integer" array="False" size=""/>
+            <assign variable="asalKontrol" expression="0"/>
+            <output expression="&quot;Bir say&#305; giriniz&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <for variable="sayac" start="2" end="sayi/2" direction="inc" step="1">
+                <if expression="sayi % sayac == 0">
+                    <then>
+                        <assign variable="asalKontrol" expression="1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="asalKontrol == 0">
+                <then>
+                    <output expression="&quot;Say&#305;n&#305;z Asal&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Say&#305;n&#305;z Asal De&#287;il&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="yaz" type="None" variable="">
+        <parameters>
+            <parameter name="yazi" type="String" array="False"/>
+            <parameter name="tekrar" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <for variable="a" start="1" end="tekrar" direction="inc" step="1">
+                <output expression="yazi" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
